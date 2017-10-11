@@ -56,3 +56,7 @@ typings/
 
 # dotenv environment variables file
 .env
+
+public/vendor.js
+public/app.js
+build/
