@@ -1,0 +1,49 @@
+{
+  "name": "advanced-react",
+  "version": "1.0.0",
+  "description": "Advance React",
+  "main": "lib/index.js",
+  "author": "CWW",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_PATH=./lib pm2 start lib/server.js --watch --interpreter babel-node",
+    "webpack": "webpack -wd",
+    "test": "jest",
+    "verify-test": "jest --coverage"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.0",
+    "enzyme": "^3.0.0",
+    "enzyme-adapter-react-16": "^1.0.0",
+    "eslint": "^4.7.0",
+    "eslint-plugin-react": "^7.3.0",
+    "jest": "^21.1.0",
+    "react-addons-perf": "^15.4.2",
+    "react-test-renderer": "^15.6.1"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "lodash.debounce": "^4.0.8",
+    "lodash.pickby": "^4.6.0",
+    "pm2": "^2.7.0",
+    "prop-types": "^15.6.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "webpack": "^3.6.0"
+  }
+}
